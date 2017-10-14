@@ -15,6 +15,7 @@
   <script type="text/javascript" async
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
+  <script type="text/javascript" src="./scripts.js"></script>
 
 </head>
 
@@ -24,7 +25,7 @@
 	<header>
 		<div>
 			<!-- logo, title, hamburger menu -->
-			<h1>Making Maths Simpler</h1>
+			<h2>Making Maths Simpler</h2>
 			<h3>Interactive probability formula sheet</h3>
 		</div>
 	</header>
@@ -32,25 +33,47 @@
 
 	<main>
 
-    <h4>Quadratic formula</h4>
-    $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
     <h4>Basic probability</h4>
-    $$ \text{Probability of event A} = P(A) = \frac
+    <p>$$ \text{Probability of event A} = P(A) = \frac
         {\text{Number of outcomes with A}}
-        {\text{Total Number of outcomes}} $$
+        {\text{Total Number of outcomes}} $$</p>
+
+
+
+			<form name="basic-prob" target='_blank' action="" method="get">
+
+				<label for='basic-prob-prob'>Probability: </label><br>
+				<input type="text" id="basic-prob-prob" placeholder="Probability P(A)" ><br>
+
+				<label for='basic-prob-over'>Over: </label><br>
+				<input type="text" id="basic-prob-over" placeholder="Fraction top" ><br>
+
+				<label for='basic-prob-under'>Probability: </label><br>
+				<input type="text" id="basic-prob-under" placeholder="Fraction bottom" ><br>
+
+			</form>
+			<button id="basic-prob-submit"> Calculate <i class='fa fa-envelope'></i></button>
+
+			<p>Result: <span id="basic-prob-result"></span></p>
+
+
+
+
+
+
+
 
     <h4>The Addition Rule</h4>
-    $$ P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B) $$
+    <p>$$ P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B) $$</p>
 
     <h4>The Multiplication Rule</h4>
-    $$ P(A\ \text{and}\ B) = P(A) * P(B|A)\ \text{or}\ P(B) * P(A|B) $$
+    <p>$$ P(A\ \text{and}\ B) = P(A) * P(B|A)\ \text{or}\ P(B) * P(A|B) $$</p>
 
     <h4>The Complement Rule</h4>
-    $$ P(\text{not}\ A) = 1 - P(A) $$
+    <p>$$ P(\text{not}\ A) = 1 - P(A) $$</p>
 
     <h4>Bayes' Rule</h4>
-    $$ P(A|B) = \frac{ P(B|A) P(A)}{ P(B) } $$
+    <p>$$ P(A|B) = \frac{ P(B|A) P(A)}{ P(B) } $$</p>
 
 
 	</main>
