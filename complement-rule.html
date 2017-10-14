@@ -23,19 +23,21 @@
 
 	<main>
 
-    <h3>The Complement Rule</h3>
+    <h1>The Complement Rule</h1>
     <p>$$ P(\text{not}\ A) = 1 - P(A) $$</p>
 		<p>Note: P(A) = P(not A)</p>
 
-			<form name="complement-rule" target='_blank' action="" method="get">
+    <table>
+      <tr>
+				<td><label for='complement-rule-prob-a'>P(A): </label></td>
+				<td><input type="text" id="complement-rule-prob-a" placeholder="P(A)" ></td>
+      </tr>
+    </table>
 
-				<label for='complement-rule-prob-a'>P(A): </label><br>
-				<input type="text" id="complement-rule-prob-a" placeholder="P(A)" ><br>
+		<button id="complement-rule-submit"> Calculate </button>
 
-			</form>
-			<button id="complement-rule-submit"> Calculate </button>
-
-			<p>Result: <span id="complement-rule-result"></span></p>
+    <p>Result:</p>
+    <div id="complement-rule-result"></div>
 
 
 	</main>

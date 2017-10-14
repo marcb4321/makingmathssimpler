@@ -22,29 +22,30 @@
 
 	<main>
 
-	  <h3>The Addition Rule</h3>
+	  <h1>The Addition Rule</h1>
 
     <p>$$ P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B) $$</p>
 
-			<form name="addition-rule" target='_blank' action="" method="get">
+    <table>
+      <tr>
+        <td><label for='addition-rule-prob-or'>P(A or B): </label></td>
+				<td><input type="text" id="addition-rule-prob-or" placeholder="P(A or B)" ></td>
+      </tr><tr>
+				<td><label for='addition-rule-prob-a'>P(A): </label></td>
+				<td><input type="text" id="addition-rule-prob-a" placeholder="P(A)" ></td>
+      </tr><tr>
+				<td><label for='addition-rule-prob-b'>P(B): </label></td>
+				<td><input type="text" id="addition-rule-prob-b" placeholder="P(B)" ></td>
+      </tr><tr>
+				<td><label for='addition-rule-prob-and'>P(A and B): </label></td>
+				<td><input type="text" id="addition-rule-prob-and" placeholder="P(A and B)" ></td>
+      </tr>
+		</table>
 
-				<label for='addition-rule-prob-or'>P(A or B): </label><br>
-				<input type="text" id="addition-rule-prob-or" placeholder="P(A or B)" ><br>
+		<button id="addition-rule-submit"> Calculate </button>
 
-				<label for='addition-rule-prob-a'>P(A): </label><br>
-				<input type="text" id="addition-rule-prob-a" placeholder="P(A)" ><br>
-
-				<label for='addition-rule-prob-b'>P(B): </label><br>
-				<input type="text" id="addition-rule-prob-b" placeholder="P(B)" ><br>
-
-				<label for='addition-rule-prob-and'>P(A and B): </label><br>
-				<input type="text" id="addition-rule-prob-and" placeholder="P(A and B)" ><br>
-
-
-			</form>
-			<button id="addition-rule-submit"> Calculate </button>
-
-			<p>Result: <span id="addition-rule-result"></span></p>
+    <p>Result:</p>
+    <div id="addition-rule-result"></div>
 
 
 	</main>

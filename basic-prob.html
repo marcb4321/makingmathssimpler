@@ -23,27 +23,28 @@
 
 	<main>
 
-    <h3>Basic probability</h3>
+    <h1>Basic probability</h1>
     <p>$$ \text{Probability of event A} = P(A) = \frac
         {\text{Number of outcomes with A}}
         {\text{Total Number of outcomes}} $$</p>
 
-			<form name="basic-prob" target='_blank' action="" method="get">
+    <table>
+      <tr>
+        <td><label for='basic-prob-prob'>Probability: </label></td>
+        <td><input type="text" id="basic-prob-prob" placeholder="P(A)" ></td>
+      </tr><tr>
+        <td><label for='basic-prob-over'>Outcomes with A: </label></td>
+        <td><input type="text" id="basic-prob-over" placeholder="Outcomes with A" ></td>
+      </tr><tr>
+        <td><label for='basic-prob-under'>Total outcomes: </label></td>
+        <td><input type="text" id="basic-prob-under" placeholder="Total outcomes" ></td>
+      </tr>
+    </table>
 
-				<label for='basic-prob-prob'>Probability: </label><br>
-				<input type="text" id="basic-prob-prob" placeholder="P(A)" ><br>
+		<button id="basic-prob-submit"> Calculate </button>
 
-				<label for='basic-prob-over'>Outcomes with A: </label><br>
-				<input type="text" id="basic-prob-over" placeholder="Outcomes with A" ><br>
-
-				<label for='basic-prob-under'>Total outcomes: </label><br>
-				<input type="text" id="basic-prob-under" placeholder="Total outcomes" ><br>
-
-			</form>
-			<button id="basic-prob-submit"> Calculate </button>
-
-			<p>Result: <span id="basic-prob-result"></span></p>
-
+    <p>Result:<p>
+    <div id="basic-prob-result"></div>
 
 	</main>
 

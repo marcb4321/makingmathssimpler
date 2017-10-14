@@ -24,27 +24,30 @@
 	<main>
 
 
-    <h3>Bayes' Rule</h3>
+    <h1>Bayes' Rule</h1>
     <p>$$ P(A|B) = \frac{ P(B|A) P(A)}{ P(B) } $$</p>
 
-			<form name="bayes-rule" target='_blank' action="" method="get">
+    <table>
 
-				<label for='bayes-rule-prob-ab'>P(A|B): </label><br>
-				<input type="text" id="bayes-rule-prob-ab" placeholder="P(A|B)" ><br>
+      <tr>
+				<td><label for='bayes-rule-prob-ab'>P(A|B): </label></td>
+				<td><input type="text" id="bayes-rule-prob-ab" placeholder="P(A|B)" ></td>
+      </tr><tr>
+				<td><label for='bayes-rule-prob-ba'>P(B|A): </label></td>
+				<td><input type="text" id="bayes-rule-prob-ba" placeholder="P(B|A)" ></td>
+      </tr><tr>
+				<td><label for='bayes-rule-prob-a'>P(A): </label></td>
+				<td><input type="text" id="bayes-rule-prob-a" placeholder="P(A)" ></td>
+      </tr><tr>
+				<td><label for='bayes-rule-prob-b'>P(B): </label></td>
+				<td><input type="text" id="bayes-rule-prob-b" placeholder="P(B)" ></td>
+      </tr>
+		</table>
 
-				<label for='bayes-rule-prob-ba'>P(B|A): </label><br>
-				<input type="text" id="bayes-rule-prob-ba" placeholder="P(B|A)" ><br>
+    <button id="bayes-rule-submit"> Calculate </button>
 
-				<label for='bayes-rule-prob-a'>P(A): </label><br>
-				<input type="text" id="bayes-rule-prob-a" placeholder="P(A)" ><br>
-
-				<label for='bayes-rule-prob-b'>P(B): </label><br>
-				<input type="text" id="bayes-rule-prob-b" placeholder="P(B)" ><br>
-
-			</form>
-			<button id="bayes-rule-submit"> Calculate </button>
-
-			<p>Result: <span id="bayes-rule-result"></span></p>
+    <p>Result:</p>
+    <div id="bayes-rule-result"></div>
 
 
 
