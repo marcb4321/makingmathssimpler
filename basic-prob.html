@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Basic probability</title>
+
+	<!-- load the main CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- load the JavaScript -->
+  <script type="text/javascript" src="./jquery-311.js"></script>
+  <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/javascript" src="./scripts.js"></script>
+
+</head>
+
+<body>
+
+	<main>
+
+    <h3>Basic probability</h3>
+    <p>$$ \text{Probability of event A} = P(A) = \frac
+        {\text{Number of outcomes with A}}
+        {\text{Total Number of outcomes}} $$</p>
+
+			<form name="basic-prob" target='_blank' action="" method="get">
+
+				<label for='basic-prob-prob'>Probability: </label><br>
+				<input type="text" id="basic-prob-prob" placeholder="P(A)" ><br>
+
+				<label for='basic-prob-over'>Outcomes with A: </label><br>
+				<input type="text" id="basic-prob-over" placeholder="Outcomes with A" ><br>
+
+				<label for='basic-prob-under'>Total outcomes: </label><br>
+				<input type="text" id="basic-prob-under" placeholder="Total outcomes" ><br>
+
+			</form>
+			<button id="basic-prob-submit"> Calculate </button>
+
+			<p>Result: <span id="basic-prob-result"></span></p>
+
+
+	</main>
+
+</body><!-- page wrapper and body -->
+
+</html>

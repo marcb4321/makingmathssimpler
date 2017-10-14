@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>The Complement Rule</title>
+
+	<!-- load the main CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- load the JavaScript -->
+  <script type="text/javascript" src="./jquery-311.js"></script>
+  <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/javascript" src="./scripts.js"></script>
+
+</head>
+
+<body>
+
+	<main>
+
+    <h3>The Complement Rule</h3>
+    <p>$$ P(\text{not}\ A) = 1 - P(A) $$</p>
+		<p>Note: P(A) = P(not A)</p>
+
+			<form name="complement-rule" target='_blank' action="" method="get">
+
+				<label for='complement-rule-prob-a'>P(A): </label><br>
+				<input type="text" id="complement-rule-prob-a" placeholder="P(A)" ><br>
+
+			</form>
+			<button id="complement-rule-submit"> Calculate </button>
+
+			<p>Result: <span id="complement-rule-result"></span></p>
+
+
+	</main>
+
+</body><!-- page wrapper and body -->
+
+</html>

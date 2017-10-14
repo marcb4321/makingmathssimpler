@@ -1,4 +1,8 @@
 
+main {
+  text-align: center;
+}
+
 header {
   border: solid black;
   border-width: 0 0 1px 0;

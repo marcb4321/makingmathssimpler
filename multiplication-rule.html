@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>The Multiplication Rule</title>
+
+	<!-- load the main CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- load the JavaScript -->
+  <script type="text/javascript" src="./jquery-311.js"></script>
+  <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/javascript" src="./scripts.js"></script>
+
+</head>
+
+<body>
+
+	<main>
+
+    <h3>The Multiplication Rule</h3>
+    <p>$$ P(A\ \text{and}\ B) = P(A) * P(B|A)\ \text{or}\ P(B) * P(A|B) $$</p>
+
+			<form name="multiplication-rule" target='_blank' action="" method="get">
+
+				<label for='multiplication-rule-prob-and'>P(A and B): </label><br>
+				<input type="text" id="multiplication-rule-prob-and" placeholder="P(A and B)" ><br>
+
+				<label for='multiplication-rule-prob-a'>P(A): </label><br>
+				<input type="text" id="multiplication-rule-prob-a" placeholder="P(A)" ><br>
+
+				<label for='multiplication-rule-prob-given'>P(B|A): </label><br>
+				<input type="text" id="multiplication-rule-prob-given" placeholder="P(B|A)" ><br>
+
+			</form>
+			<button id="multiplication-rule-submit"> Calculate </button>
+
+			<p>Result: <span id="multiplication-rule-result"></span></p>
+
+	</main>
+
+</body><!-- page wrapper and body -->
+
+</html>
