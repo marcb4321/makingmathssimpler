@@ -4,9 +4,11 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Maths is Fun!</title>
+
+	<title>Making Maths Simpler</title>
+
 	<!-- load the main CSS -->
-	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="styles.css">
 
 	<!-- load the JavaScript -->
   <script type="text/javascript" src="./jquery-311.js"></script>
@@ -18,28 +20,38 @@
 
 <body>
 
+  	<!-- header -->
+	<header>
+		<div>
+			<!-- logo, title, hamburger menu -->
+			<img id='logo' alt='making maths simpler logo' src='logo.jpg'>
+			<h1>Making Maths Simpler</h1>
+			<h3>Interactive probability formula sheet</h3>
+			<img tabindex=1 id='hamburger' alt='button for displaying navigation menu' src='../images/hamburger.png'>
+		</div>
+	</header>
+
+
 	<main>
 
-    <h3>Example Equations</h3>
-
-    Quadratic formula
+    <h4>Quadratic formula</h4>
     $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
-    Basic probability
+    <h4>Basic probability</h4>
     $$ \text{Probability of event A} = P(A) = \frac
         {\text{Number of outcomes with A}}
         {\text{Total Number of outcomes}} $$
 
-    The Addition Rule
+    <h4>The Addition Rule</h4>
     $$ P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B) $$
 
-    The Multiplication Rule
+    <h4>The Multiplication Rule</h4>
     $$ P(A\ \text{and}\ B) = P(A) * P(B|A)\ \text{or}\ P(B) * P(A|B) $$
 
-    The Complement Rule
+    <h4>The Complement Rule</h4>
     $$ P(\text{not}\ A) = 1 - P(A) $$
 
-    Bayes' Rule
+    <h4>Bayes' Rule</h4>
     $$ P(A|B) = \frac{ P(B|A) P(A)}{ P(B) } $$
 
 
