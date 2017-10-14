@@ -2,42 +2,95 @@
 function isANumber(num) {
   return (num != "" && $.isNumeric(num));
 }
+function isAProb(num) {
+  return !(num < 0 || num > 1);
+}
 
 $(document).ready(function() {
-  $('#basic-prob-result').text("test");
 
+
+
+  // basic probability calculator
   $('#basic-prob-submit').on('click', function() {
-    var prob = $('#basic-prob-prob').val();
-    var over = $('#basic-prob-over').val();
-    var under = $('#basic-prob-under').val();
+    var prob = parseFloat($('#basic-prob-prob').val());
+    var over = parseInt($('#basic-prob-over').val());
+    var under = parseInt($('#basic-prob-under').val());
     numNumeric = (isANumber(prob) ? 1 : 0) + (isANumber(over) ? 1 : 0) + (isANumber(under) ? 1 : 0);
     // test that there is the right number of inputs
     if (numNumeric == 2) {
       returnText = ""
       if (!isANumber(prob)) {
         if (over > under) { returnText = "Over must be smaller than under" }
+        if (over < 0 || under < 0) { returnText = "Over and under must be positive" }
         else {
           // calculate the probability
           returnText = "Probability = " + (over / under);
         }
       } else if (!isANumber(over)) {
-        if (prob > 1 || prob < 0) { returnText = "Probability must be between 0 and 1" }
+        if (!isAProb(prob)) { returnText = "Probability must be between 0 and 1" }
         else {
           // calculate over
-          returnText = "Over: " + (under * prob);
+          returnText = "Outcomes with A: " + Math.round(under * prob);
         }
       } else if (!isANumber(under)) {
-        if (prob > 1 || prob < 0) { returnText = "Probability must be between 0 and 1" }
+        if (!isAProb(prob)) { returnText = "Probability must be between 0 and 1" }
         else {
           // calculate under
-          returnText = "Under: " + (over / prob);
+          returnText = "Total outcomes: " + Math.round(over / prob);
         }
       }
       $('#basic-prob-result').text(returnText);
+    } else if (numNumeric == 3) {
+      $('#basic-prob-result').text("Please leave the box you want to calculate blank");
     } else {
-      $('#basic-prob-result').text("Please enter 2 numbers");
+      $('#basic-prob-result').text("Please enter 2 values");
     }
-
   })
+
+
+
+
+
+  // addition rule calculator
+  $('#addition-rule-submit').on('click', function() {
+    var or = parseFloat($('#addition-rule-prob-or').val());
+    var a = parseFloat($('#addition-rule-prob-a').val());
+    var b = parseFloat($('#addition-rule-prob-b').val());
+    var and = parseFloat($('#addition-rule-prob-and').val());
+    numNumeric = (isANumber(or) ? 1 : 0) + (isANumber(a) ? 1 : 0) + (isANumber(b) ? 1 : 0) + (isANumber(and) ? 1 : 0);
+    // test that there is the right number of inputs
+    if (numNumeric == 3) {
+      returnText = ""
+      if (!isANumber(or)) {
+        if (!isAProb(a) || !isAProb(b) || !isAProb(and)) { returnText = "Probabilities must be between 0 and 1" }
+        else {
+          returnText = "P(A or B) = " + (a + b - and);
+        }
+      } else if (!isANumber(a)) {
+        if (!isAProb(or) || !isAProb(b) || !isAProb(and)) { returnText = "Probabilities must be between 0 and 1" }
+        else {
+          returnText = "P(A) = " + (and + or - b);
+        }
+      } else if (!isANumber(b)) {
+        if (!isAProb(or) || !isAProb(a) || !isAProb(and)) { returnText = "Probabilities must be between 0 and 1" }
+        else {
+          returnText = "P(B) = " + (and + or - a);
+        }
+      } else {
+        if (!isAProb(or) || !isAProb(a) || !isAProb(b)) { returnText = "Probabilities must be between 0 and 1" }
+        else {
+          returnText = "P(A and B) = " + (a + b - or);
+        }
+      }
+      $('#addition-rule-result').text(returnText);
+    } else if (numNumeric == 4) {
+      $('#basic-prob-result').text("Please leave the box you want to calculate blank");
+    } else {
+      $('#addition-rule-result').text("Please enter 3 values");
+    }
+  })
+
+
+
 })
 

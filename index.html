@@ -38,18 +38,16 @@
         {\text{Number of outcomes with A}}
         {\text{Total Number of outcomes}} $$</p>
 
-
-
 			<form name="basic-prob" target='_blank' action="" method="get">
 
 				<label for='basic-prob-prob'>Probability: </label><br>
-				<input type="text" id="basic-prob-prob" placeholder="Probability P(A)" ><br>
+				<input type="text" id="basic-prob-prob" placeholder="P(A)" ><br>
 
-				<label for='basic-prob-over'>Over: </label><br>
-				<input type="text" id="basic-prob-over" placeholder="Fraction top" ><br>
+				<label for='basic-prob-over'>Outcomes with A: </label><br>
+				<input type="text" id="basic-prob-over" placeholder="Outcomes with A" ><br>
 
-				<label for='basic-prob-under'>Probability: </label><br>
-				<input type="text" id="basic-prob-under" placeholder="Fraction bottom" ><br>
+				<label for='basic-prob-under'>Total outcomes: </label><br>
+				<input type="text" id="basic-prob-under" placeholder="Total outcomes" ><br>
 
 			</form>
 			<button id="basic-prob-submit"> Calculate <i class='fa fa-envelope'></i></button>
@@ -57,14 +55,30 @@
 			<p>Result: <span id="basic-prob-result"></span></p>
 
 
-
-
-
-
-
-
     <h4>The Addition Rule</h4>
     <p>$$ P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B) $$</p>
+
+			<form name="addition-rule" target='_blank' action="" method="get">
+
+				<label for='addition-rule-prob-or'>P(A or B): </label><br>
+				<input type="text" id="addition-rule-prob-or" placeholder="P(A or B)" ><br>
+
+				<label for='addition-rule-prob-a'>P(A): </label><br>
+				<input type="text" id="addition-rule-prob-a" placeholder="P(A)" ><br>
+
+				<label for='addition-rule-prob-b'>P(B): </label><br>
+				<input type="text" id="addition-rule-prob-b" placeholder="P(B)" ><br>
+
+				<label for='addition-rule-prob-and'>P(A and B): </label><br>
+				<input type="text" id="addition-rule-prob-and" placeholder="P(A and B)" ><br>
+
+
+			</form>
+			<button id="addition-rule-submit"> Calculate <i class='fa fa-envelope'></i></button>
+
+			<p>Result: <span id="addition-rule-result"></span></p>
+
+
 
     <h4>The Multiplication Rule</h4>
     <p>$$ P(A\ \text{and}\ B) = P(A) * P(B|A)\ \text{or}\ P(B) * P(A|B) $$</p>
