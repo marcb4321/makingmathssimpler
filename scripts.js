@@ -20,8 +20,8 @@ $(document).ready(function() {
     if (numNumeric == 2) {
       returnText = ""
       if (!isANumber(prob)) {
-        if (over > under) { returnText = "Over must be smaller than under" }
-        if (over < 0 || under < 0) { returnText = "Over and under must be positive" }
+        if (over > under) { returnText = "Number of A outcomes must be smaller than the number of total outcomes" }
+        else if (over < 0 || under < 0) { returnText = "Total outcomes and number of A outcomes must be positive" }
         else {
           // calculate the probability
           returnText = "Probability = " + (over / under);

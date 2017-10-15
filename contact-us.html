@@ -1,38 +1,44 @@
-
 <!DOCTYPE html>
-<html lang="en-GB">
+<html>
 
-<head>
-	<meta charset="utf-8">
-
-	<title>Making Maths Simpler</title>
-
-	<!-- load the main CSS -->
-	<link rel="stylesheet" href="styles.css">
-
-	<!-- load the JavaScript -->
-  <script type="text/javascript" src="./jquery-311.js"></script>
-  <script type="text/javascript" async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-  <script type="text/javascript" src="./scripts.js"></script>
-
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Making Probability Simpler</title>
+		
+		<!-- load the CSS -->
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="Index.css">
+		<link rel="icon" href="favicon.ico">
+	</head>
 
 <body>
 
-  	<!-- header -->
-	<header>
-		<div>
-			<!-- logo, title, hamburger menu -->
-			<h2>Making Maths Simpler</h2>
-			<h3>Contact Us</h3>
-		</div>
-	</header>
+<header>
+		<a href="index.html"><img src="logomakr_92ysyh__1_.png" alt="Logo" />
+    	<h1 align="center"> <u>Making Probability Simpler</u></h1>
+	
+</header>
 
 
-	<main>
-
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li>
+				<div class="dropdown">
+					<div class="navElement">Useful Links</div>
+					<div class="dropdown-content">
+					<a href="https://www.mathsisfun.com/data/probability.html">Math is Fun</a>
+					<a href="http://www.platinumgmat.com/gmat_study_guide/probability">PlatinumGMAT</a>
+					<a href="http://www.sparknotes.com/math/algebra1/probability/">SparkNotes</a>
+					</div>
+				</div>
+			</li>
+			<li><a href="contact-us.html">Contact us</a></li>
+		</ul>
+	</nav>
+   <main>
+		<h2 class="pageHeadingContactUs">Contact us</h2>
   		<form id="contact-form" name="making-maths-simpler-comments-form" target='_blank' action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
 				<!-- email address to send response to and description (for the DCS script) -->
 				<input type="hidden" name="recipient" value="mabonne1@sheffield.ac.uk">
@@ -47,12 +53,27 @@
 				<label class="left" for='comments'>Your comments and/or suggestions:</label><br>
 				<textarea class="left-input" name="comment" id="comments" placeholder="Please type your comments here..." required></textarea><br>
 				<!-- submit button -->
-				<button class="left-input" type='submit'> Send <i class='fa fa-envelope'></i></button>
+				<button class="left-input lessMargin"  type='submit'> Send <i class='fa fa-envelope'></i></button>
 			</form>
 
 
 	</main>
+	
+<footer>
+	Copyright © 2017 - Making Probability Simpler 
+</footer>	
 
-</body><!-- page wrapper and body -->
+</body>
 
 </html>
+
+
+
+
+
+
+	
+
+
+	
+

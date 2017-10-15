@@ -1,0 +1,168 @@
+body {
+	background-image: url("bg.png");
+	background-repeat: repeat-x;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 30px;
+	color: dark gray;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+table, th, td {
+	border: 1px solid black;
+	
+}
+th {
+	height: 100%;
+}
+
+th, td {
+    padding: 10px;
+	text-align: Center
+}	
+h1 {
+	color: Black;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: purple;
+  font-family: Papyrus, serif;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+nav {
+  margin: 0;
+  padding: 5px 5%;
+  background-color: #eeeedd;
+  color: gray;
+  font-size: 1.1em;
+  text-align: right;
+  }
+
+nav ul {  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 5%;
+}
+
+nav a {
+  text-decoration: none;
+  outline: none;
+}
+
+.navElement { color: purple; }
+.navElement:hover { 
+  color: orange;
+}
+nav a:link { color: purple; }
+
+nav a:visited { color: purple; }
+
+nav a:hover { 
+  color: orange;
+}
+
+*.dark {
+  background-color: lightgrey;
+  color:black;
+  }
+
+footer {
+  clear: both;
+  font-size: 0.75em;
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 20px 0;
+  background-color: lightblue;
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%
+  }
+
+.dropbtn {
+    
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+
+ img {
+ float: left;
+	height:91px;
+	width: 100px
+ -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+     transition: all 3s ease;
+	transition: box-shadow 1s ease; 
+}
+
+.pageHeadingContactUs{
+	padding-top: 30px;
+	font-size: 2em;
+	color: white;
+	
+}
+
+nav {
+	font-family: serif;
+}
+
+
+
+</style>  
