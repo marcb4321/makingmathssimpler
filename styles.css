@@ -1,4 +1,14 @@
 
+.centered {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+textarea {
+  height: 200px;
+  width: 500px;
+}
+
 body {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
