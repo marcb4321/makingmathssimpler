@@ -33,21 +33,21 @@
 
 	<main>
 
-  			<form name="making-maths-simpler-comments-form" target='_blank' action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+  		<form id="contact-form" name="making-maths-simpler-comments-form" target='_blank' action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
 				<!-- email address to send response to and description (for the DCS script) -->
 				<input type="hidden" name="recipient" value="mabonne1@sheffield.ac.uk">
 				<input type="hidden" name="subject" value="making-maths-simpler-comments-form">
 				<!-- name -->
-				<label class="centered" for='name'>Your name: </label><br>
-				<input type="name" id="name" name="name" placeholder="Name" required><br>
+				<label class="left" for='name'>Your name: </label><br>
+				<input class="left-input" type="name" id="name" name="name" placeholder="Name" required><br>
 				<!-- email address -->
-				<label class="centered" for='email'>Your email address: </label><br>
-				<input type="email" id="email" name="email" placeholder="Email" required><br>
+				<label class="left" for='email'>Your email address: </label><br>
+				<input class="left-input" type="email" id="email" name="email" placeholder="Email" required><br>
 				<!-- comment/suggestion-->
-				<label class="centered" for='comments'>Your comments and/or suggestions:</label><br>
-				<textarea name="comment" id="comments" placeholder="Please type your comments here..." required></textarea><br>
+				<label class="left" for='comments'>Your comments and/or suggestions:</label><br>
+				<textarea class="left-input" name="comment" id="comments" placeholder="Please type your comments here..." required></textarea><br>
 				<!-- submit button -->
-				<button type='submit'> Send <i class='fa fa-envelope'></i></button>
+				<button class="left-input" type='submit'> Send <i class='fa fa-envelope'></i></button>
 			</form>
 
 
